@@ -39,6 +39,13 @@ public class DemoDouble {
     double averageScore = (score1+score2) /2;
     System.out.println(averageScore); //76.0
 
+    //! divded by zero > System Error
+    // divided by zero
+    //double r3 = 10 / 0;
+    //System.out.println(r3);
+
+    double r4 = 0 / 10;
+    System.out.println(r4);
 
   }
 }

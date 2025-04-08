@@ -17,13 +17,13 @@ public class DemoInteger {
     //int y = 200;
 
     //+ - * /
-    int a = 1+2;
+    int a = 1 + 2;
     System.out.println(a); //3
 
     //from right to left
     //1.y +2 > 202
     //2. Assign 202 into y.
-    y= y+2;
+    y = y + 2;
     System.out.println(y);
 
 
@@ -53,5 +53,5 @@ public class DemoInteger {
     //! Put ~3.3333 into an integer variable > trim decimal places (Java)
     int r2 = 10 / 3;
     System.out.println(r2); //3
-
+    }
 }
