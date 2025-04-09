@@ -163,7 +163,8 @@ public class DemoIf {
     // Step 10: i = i + 1 > 3
     // Step 11: check if i < 3 > false > exit the loop
     //
-    for (int i = 0; i < 3; i = i + 1 ) {
+    int count = 3;
+    for (int i = 0; i < count; i = i + 1 ) {
       System.out.println("hello");
     }
 
