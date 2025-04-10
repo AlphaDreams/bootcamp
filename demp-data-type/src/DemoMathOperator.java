@@ -58,13 +58,36 @@ public class DemoMathOperator {
     // Largest number between 3 numbers
     //int num3 = 13;
     // 13
+
+    int num3 = 13;
     if (max < num3) {
       max = num3;
     }
-    system.out.println(max);
+    System.out.println(max);
 
     //Find Min. number
     //40, 32, -19
+
+    //Min. number
+    int num4 = 40;
+    int num5 = 32;
+
+    int min = 0;
+
+    if (num4 < num5) {
+      min = num4;
+    }
+    System.out.println(min);
+
+    int num6 = -19;
+
+    if  (num4 < num6){
+      min = num4;
+    } else {
+      min = num6;
+      System.out.println(min);
+    }
+
 
   }
 }
