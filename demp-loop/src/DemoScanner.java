@@ -6,12 +6,12 @@ public class DemoScanner {
     System.out.println("Please input a number");
     int input = scanner.nextInt();
 
-    //System.out.println("input" + input);
+    // System.out.println("input" + input);
 
     // Determine if the input is odd or even number
     // its odd number.
     // its even number.
-    if (input % 2 ==1){
+    if (input % 2 == 1) {
       System.out.println("Its odd number.");
     } else {
       System.out.println("its even number.");
