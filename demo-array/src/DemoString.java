@@ -93,6 +93,18 @@ public class DemoString {
     System.out.println("hello".endsWith("lo")); // true
     System.out.println("hello".endsWith("oo")); // false
 
+    // Check if the String value is Palindromic 對稱
+    // madam
+    // ada
+    // abcba
+    // abccba
+    String s = "madam"; // true
+    
+    for( int i =0; i <        ;i++){
+      if(){
+        
+      }
+    }
 
 
 

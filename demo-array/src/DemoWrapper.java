@@ -57,9 +57,37 @@ public class DemoWrapper {
     // Long > long > int > (autobox) Integer
     Integer i6 = (int) ((long) Long.valueOf(10L)); //! for fun
 
+    // ! compareTo()
+    int age = 102;
+    // ! Integer never use >, <, >=, <=, We should use compareTo for comparsion
+    System.out.println(Integer.valueOf(100).compareTo(Integer.valueOf(age))); // -1 (right is larger)
+    System.out.println(Integer.valueOf(102).compareTo(Integer.valueOf(age))); // 0
 
+    // unboxing for Math operation (int -int)
+    int diff = Integer.valueOf(100) - Integer.valueOf(age);
+    System.out.println(diff); // -2
 
+    String s10 = "abcd";
+    String s11 = "bcde";
+    System.out.println(s11.compareTo(s10)); // 1 (comapre first char, b - a)
+    System.out.println(s10.compareTo(s10)); // -1 (compare first char, a -b)
+    String s12 = "ccde";
+    System.out.println(s12.compareTo(s10));// 2 (compare first char, c - a)
+    String s13 = "ccde";
+    System.out.println(s13.compareTo(s12));// 1 (d - c)
 
+    String s14 = "Abcd";
+    System.out.println(s14.compareTo(s10)); // -32 (A -a)
+    String s16 = "Abcde";
+    System.out.println(s14.compareTo(s16)); // -1
+
+    String name = "John";
+    // if (name.equals("John") == false) {
+    if (!name.equals("John")) {
+      System.out.println(" Not John");
+    } else {
+      System.out.println("John");
+    }
 
 
 
