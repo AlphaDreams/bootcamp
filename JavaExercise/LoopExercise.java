@@ -5,22 +5,48 @@ public class LoopExercise {
     // Use: for loop
     String a = "hello";
     for (int i = 0; i < 6; i++) {
-      System.out.println(a);
+      //System.out.println(a);
     }
 
     // 2. Expected output: "0,1,2,3,4"
     // Use: for loop
-    
+    String b = "";
+    for (int i = 0; i < 5; i++) {
+      if (i > 0 ) {
+          b += ",";
+      }
+      b +=i;
+    }
+    //System.out.println(b);
 
 
     // 3. Print even numbers between 2 and 20
     // Use: for loop + if
+    String c = "";
+    for (int i = 0; i <=20; i++){
+      if (i % 2 == 0){
+       // System.out.println(i + " ");
+      }
+    }
+
 
     // 4. Print the numbers between 1 and 100, which can be divided by 3 or 5
     // Use: for loop + if
+    String d = "";
+    for(int i =0; i <= 100; i++){
+      if(i > 0 && (i % 3 == 0 || i % 5 ==0) )  {
+       //System.out.println( i + " ");
+      }
+    }
 
     // 5. Sum up the numbers between 0 and 15 and print it
     // Use: for loop
+    int sums = 0;
+    for(int i = 0; i < 16;i++) {
+      sums += i; // sums = sums + i;
+    }
+    System.out.println("Ex5 :" + sums);
+
 
     // 6. sum up all odd numbers betwen 0 - 10
     // Sum up all even numbers betwen 0 - 10
@@ -95,7 +121,9 @@ public class LoopExercise {
 
     // 20. Find the longest String in the String array
     // Print "longest=programming"
-    String[] arr20 = new String[] {"python", "array", "programming", "java", "bootcamp"}
+    String[] arr20 = new String[] {"python", "array", "programming", "java", "bootcamp"};
+
+
 
   }
 }

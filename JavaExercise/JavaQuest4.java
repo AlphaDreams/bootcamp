@@ -10,8 +10,14 @@ public class JavaQuest4 {
     // 1. Even numbers
     // 2. Divisible by 3
     // 3. > 0
+    String result = "";
     for (int i = 0; i < 100; i++) {
-      // code here ...
+      if(i % 3 ==0 && i % 2 ==0){
+        result = i+ " ";
+      }
+
     }
+    System.out.println(result);
+
   }
 }

@@ -1,4 +1,4 @@
-public class WeekRecap {
+public class Week1Recap {
   public static void main(String[] args) {
     // Data Type: Primitives
     byte b1 = -128;
