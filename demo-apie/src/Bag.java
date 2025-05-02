@@ -18,7 +18,7 @@ public class Bag {
     return true;
   }
 
-  public boolean isFUll() {
+  public boolean isFull() {
     for (int i = 0; i < this.balls.length; i++) {
       if (this.balls[i] == null) {
         return false;
@@ -31,16 +31,24 @@ public class Bag {
     for (int i = 0; i < this.balls.length; i++) {
       if (this.balls[i] == null) {
         this.balls[i] = newBall;
+        return true;
       }
     }
     return false;
   }
 
   public Ball pick(int index) {
-    if (index < 0 || index >= 0 this.balls.length)
+    if (index < 0 || index >= this.balls.length)
       return null;
-    return this.balls[index];
+    Ball target = this.balls[index];
     this.balls[index] = null;
-    return ball;
+    return target;
+  }
+
+  public static void main(String[] args) {
+    // Primitive (default values)
+    // Class (String, BigDecimal, Ball, Cat, etc) -> (default: null)
+    String s = null;
+    System.out.println(s.length()); // s is not able to find the string object.
   }
 }

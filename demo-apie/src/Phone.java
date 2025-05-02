@@ -1,13 +1,12 @@
-public class Phone extends Machine { // 
+public class Phone extends Machine { // Phone "has" Camera
   private final String model;
   private Camera camera;
   private Photo[] photos;
   private int idx;
 
-
   public Phone(String model) {
     this.model = model;
-    this.camera = new Camera();
+    // this.camera = new Camera();
     this.photos = new Photo[5];
     this.idx = 0;
   }
@@ -16,7 +15,7 @@ public class Phone extends Machine { //
     return this.camera;
   }
 
-  public boolean takePhoto(){
+  public boolean takePhoto() {
     if (this.idx >= photos.length) {
       return false;
     }
@@ -24,11 +23,6 @@ public class Phone extends Machine { //
     this.idx++;
     return true;
   }
-
-  //public void setModel(String model) {
-  //  this.model = model;
-  //}
-
 
   public static void main(String[] args) {
     // Phone
@@ -39,10 +33,12 @@ public class Phone extends Machine { //
     iphone4.turnOn();
     System.out.println(iphone4.getStatus()); // ON
 
-    System.out.println();
-
+    System.out.println(iphone4.takePhoto());
+    System.out.println(iphone4.takePhoto());
+    System.out.println(iphone4.takePhoto());
+    System.out.println(iphone4.takePhoto());
+    System.out.println(iphone4.takePhoto());
 
 
   }
 }
-

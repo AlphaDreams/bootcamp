@@ -10,6 +10,7 @@ public class Animal { // more abstract -> Parent Class
     this.name = name;
   }
 
+
   public Animal(String name, Cat cat) {
     this.cat = cat;
     this.name = name;
@@ -26,6 +27,10 @@ public class Animal { // more abstract -> Parent Class
 
   public Cat getCat() {
     return this.cat;
+  }
+
+  public void sound() {
+    System.out.println("default sound ...");
   }
 
   public static void main(String[] args) {

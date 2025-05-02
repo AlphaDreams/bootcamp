@@ -10,6 +10,10 @@ public class Circle {
   private String color; // Yellow
 
 
+  public Circle(double d, String string) {
+    //TODO Auto-generated constructor stub
+  }
+
   public void setColor(String color) {
     this.color = color;
   }

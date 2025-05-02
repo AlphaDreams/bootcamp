@@ -9,5 +9,12 @@ public class Dog extends Animal {
     System.out.println(d1.toString()); // Dog@6d06d69c
     Dog d2 = new Dog("Lucas");
     System.out.println(d1.equals(d2)); // false
+    }
+
+    @Override
+    public void sound() {
+      System.out.println("Wow ...");
+
+
   }
 }

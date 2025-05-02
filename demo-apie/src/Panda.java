@@ -1,19 +1,10 @@
-public class Cat extends Animal {
+public class Panda extends Animal {
   // Attributes -> inherited (name)
-  private int age;
+  private String color;
 
-  public Cat(String name, int age) {
+  public Panda(String name) {
     // super (parent)
     super(name); // calling parent class's constructor
-    this.age = age;
-  }
-
-  public int getAge() {
-    return this.age;
-  }
-
-  public void setAge(int age) {
-    this.age = age;
   }
 
   // ! inherit all instance method: getName()
